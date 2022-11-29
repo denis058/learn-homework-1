@@ -20,7 +20,19 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    str_one = 'Привет'
+    str_two = 'LEARN'
+
+    if isinstance(str_one, str) != isinstance(str_two, str):
+        print(0)
+    elif len(str_one.lower()) == len(str_two.lower()):
+        print(1)
+    elif len(str_one.lower()) != len(str_two.lower()) and str_two.lower() == 'learn':
+        print(3)
+    else:
+        print(2)
+        
     
 if __name__ == "__main__":
     main()
+  
